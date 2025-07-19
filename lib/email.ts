@@ -214,7 +214,7 @@ export async function sendThankYouEmail(orderDetails: OrderDetails) {
                     <h3>💬 Need Help?</h3>
                     <p>If you have any questions about your order, feel free to contact us:</p>
                     <p>
-                        📧 <strong>Email:</strong> majork.n07@gmail.com<br>
+                        📧 <strong>Email:</strong> info@futurestart.co.za<br>
                         📞 <strong>Phone:</strong> +27 72 041 9723<br>
                         💬 <strong>WhatsApp:</strong> +27 72 041 9723
                     </p>
