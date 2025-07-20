@@ -444,9 +444,7 @@ export default function ContactPage() {
 
                   <div className='bg-white p-4 rounded-2xl shadow-lg border-l-4 border-blue-500'>
                     <div className='flex items-center gap-3'>
-                      <div className='bg-blue-100 p-2 rounded-full'>
-                        <Users className='h-5 w-5 text-blue-600' />
-                      </div>
+                      <div className='bg-blue-100 p-2 rounded-full'></div>
                       <div>
                         <p className='font-bold'>📱 Follow Us</p>
                         <p className='text-gray-600'>@conqueringtertiary</p>
