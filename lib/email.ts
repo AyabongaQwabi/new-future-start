@@ -229,7 +229,7 @@ export async function sendThankYouEmail(orderDetails: OrderDetails) {
             <div class="footer">
                 <p><strong>Future Start</strong> - Empowering learners and students on their academic journey</p>
                 <p style="font-size: 12px; color: #6b7280;">
-                    This email was sent to ${customerEmail}. If you have any questions, please contact us at majork.n07@gmail.com
+                    This email was sent to ${customerEmail}. If you have any questions, please contact us at info@futurestart.co.za
                 </p>
             </div>
         </div>
@@ -289,7 +289,7 @@ ${
 Track your order: https://futurestart.co.za/track-order?tracking=${trackingNumber}
 
 Need help? Contact us:
-Email: majork.n07@gmail.com
+Email: info@futurestart.co.za
 Phone: +27 72 041 9723
 WhatsApp: +27 72 041 9723
 

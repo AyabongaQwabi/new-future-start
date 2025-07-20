@@ -577,7 +577,7 @@ export default function Page() {
                       </div>
                       <div>
                         <p className='font-bold'>📧 Email Us</p>
-                        <p className='text-gray-600'>majork.n07@gmail.com</p>
+                        <p className='text-gray-600'>info@futurestart.co.za</p>
                       </div>
                     </div>
                   </div>
@@ -626,7 +626,7 @@ export default function Page() {
                       className='w-full bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white font-bold text-lg rounded-full py-6 shadow-lg'
                       asChild
                     >
-                      <a href='mailto:majork.n07@gmail.com'>
+                      <a href='mailto:info@futurestart.co.za'>
                         <Send className='mr-2 h-6 w-6' /> 📧 Email Us Now!
                       </a>
                     </Button>

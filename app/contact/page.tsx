@@ -112,7 +112,7 @@ export default function ContactPage() {
                     </CardHeader>
                     <CardContent>
                       <p className='text-sm text-gray-500'>
-                        majork.n07@gmail.com
+                        info@futurestart.co.za
                       </p>
                     </CardContent>
                   </Card>
@@ -186,7 +186,7 @@ export default function ContactPage() {
                       className='bg-green-600 hover:bg-green-700 h-16 text-xl w-full'
                       asChild
                     >
-                      <a href='mailto:majork.n07@gmail.com'>
+                      <a href='mailto:info@futurestart.co.za'>
                         <Send className='mr-2 h-6 w-6' /> Email Us
                       </a>
                     </Button>
@@ -437,7 +437,7 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <p className='font-bold'>📧 Email Us</p>
-                        <p className='text-gray-600'>majork.n07@gmail.com</p>
+                        <p className='text-gray-600'>info@futurestart.co.za</p>
                       </div>
                     </div>
                   </div>
@@ -486,7 +486,7 @@ export default function ContactPage() {
                       className='w-full bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white font-bold text-lg rounded-full py-6 shadow-lg'
                       asChild
                     >
-                      <a href='mailto:majork.n07@gmail.com'>
+                      <a href='mailto:info@futurestart.co.za'>
                         <Send className='mr-2 h-6 w-6' /> 📧 Email Us Now!
                       </a>
                     </Button>

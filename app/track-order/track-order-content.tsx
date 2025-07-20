@@ -377,7 +377,7 @@ export default function TrackOrderContent() {
                     <div>
                       <div className='font-medium text-sm'>Email</div>
                       <div className='text-sm text-gray-600'>
-                        majork.n07@gmail.com
+                        info@futurestart.co.za
                       </div>
                     </div>
                   </div>
