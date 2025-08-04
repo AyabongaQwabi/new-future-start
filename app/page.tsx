@@ -13,6 +13,7 @@ import {
 import Testimonials from '@/components/testimonials';
 import BookFeatures from '@/components/book-features';
 import BookPurchaseButton from '@/components/book-purchase-button';
+import BookLaunchTicketButton from '@/components/book-launch-ticket-button';
 import CheckoutStatus from '@/components/checkout-status';
 import {
   Card,
@@ -79,12 +80,13 @@ export default function Page() {
               📞 Contact
             </a>
           </nav>
-          <div>
+          <div className='flex gap-2'>
+            <BookLaunchTicketButton />
             <BookPurchaseButton
               amount={29900} // R299.00 in cents
               className='bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold rounded-full px-6 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all'
             >
-              🛒 Buy Now
+              🛒 Buy Book
             </BookPurchaseButton>
           </div>
         </div>
@@ -126,7 +128,33 @@ export default function Page() {
               >
                 Let your Future start with us 🌟
               </p>
-              <div className='flex flex-col sm:flex-row gap-4 justify-center pt-8 mt-2'>
+
+              {/* Book Launch Announcement */}
+              <div className='bg-white shadow-md text-gray-700 p-6 rounded-3xl shadow-2xl mb-8 animate-pulse'>
+                <h2 className='text-2xl md:text-3xl font-black mb-2'>
+                  🎉 BOOK LAUNCH EVENT!
+                </h2>
+                <p className='text-lg md:text-xl mb-4'>
+                  Join us for the official launch of "Conquering Your Years in
+                  Tertiary Education"
+                </p>
+                <div className='flex flex-col sm:flex-row gap-2 justify-center items-center text-sm md:text-base'>
+                  <span className='flex items-center gap-2'>
+                    📅 Friday, 4 October 2024
+                  </span>
+                  <span className='hidden sm:block'>•</span>
+                  <span className='flex items-center gap-2'>
+                    📍 Eyethu Centre, Soweto
+                  </span>
+                  <span className='hidden sm:block'>•</span>
+                  <span className='flex items-center gap-2'>
+                    🎟️ R400 per ticket
+                  </span>
+                </div>
+              </div>
+
+              <div className='flex flex-col sm:flex-row gap-4 justify-center pt-4'>
+                <BookLaunchTicketButton />
                 <BookPurchaseButton
                   amount={29900} // R299.00 in cents
                   size='lg'
@@ -577,7 +605,7 @@ export default function Page() {
                       </div>
                       <div>
                         <p className='font-bold'>📧 Email Us</p>
-                        <p className='text-gray-600'>info@futurestart.co.za</p>
+                        <p className='text-gray-600'>majork.n07@gmail.com</p>
                       </div>
                     </div>
                   </div>
@@ -626,7 +654,7 @@ export default function Page() {
                       className='w-full bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white font-bold text-lg rounded-full py-6 shadow-lg'
                       asChild
                     >
-                      <a href='mailto:info@futurestart.co.za'>
+                      <a href='mailto:majork.n07@gmail.com'>
                         <Send className='mr-2 h-6 w-6' /> 📧 Email Us Now!
                       </a>
                     </Button>
