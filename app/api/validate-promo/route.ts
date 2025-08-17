@@ -90,6 +90,12 @@ export async function POST(request: NextRequest) {
       discount: discountAmount,
       discountAmount: discountAmount,
       description: `Save R${(discountAmount / 100).toFixed(2)} on your order`,
+      // Additional details
+      usage_limit: usageLimit,
+      times_used: timesUsed,
+      expires_at: promoCode.expires_at,
+      created_at: promoCode.created_at,
+      is_active: promoCode.is_active === "true" || promoCode.is_active === true,
     })
   } catch (error) {
     console.error("Error validating promo code:", error)

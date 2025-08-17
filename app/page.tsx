@@ -73,6 +73,12 @@ export default function Page() {
             >
               📦 Track Order
             </Link>
+            <Link
+            href="/promo-codes"
+            className="text-sm font-bold transition-colors hover:text-purple-600 hover:scale-105 transform"
+          >
+            🎫 Promo Codes
+          </Link>
             <a
               href='#contact'
               className='text-sm font-bold transition-colors hover:text-purple-600 hover:scale-105 transform'

@@ -89,6 +89,12 @@ export function Navbar() {
             📦 Track Order
           </Link>
           <Link
+            href="/promo-codes"
+            className="text-sm font-bold transition-colors hover:text-purple-600 hover:scale-105 transform"
+          >
+            🎫 Promo Codes
+          </Link>
+          <Link
             href="/#contact"
             className="text-sm font-bold transition-colors hover:text-purple-600 hover:scale-105 transform"
           >
@@ -169,6 +175,13 @@ export function Navbar() {
               onClick={() => setIsOpen(false)}
             >
               📦 Track Order
+            </Link>
+            <Link
+              href="/promo-codes"
+              className="block text-sm font-bold transition-colors hover:text-purple-600"
+              onClick={() => setIsOpen(false)}
+            >
+              🎫 Promo Codes
             </Link>
             <Link
               href="/#contact"
