@@ -129,7 +129,7 @@ export default function TicketSuccessContent() {
       `Ticket #: ${ticket.ticket_number}`,
       `Name: ${ticket.purchaser_name} ${ticket.purchaser_surname}`,
       `Quantity: ${ticket.quantity} ticket${ticket.quantity > 1 ? 's' : ''}`,
-      `Date: Friday, 4 October 2024`,
+      `Date: Friday, 4 October 2025`,
       `Venue: ${ticket.event_venue}`,
       `Total: R${(ticket.total_amount / 100).toFixed(2)}`,
     ];
@@ -213,7 +213,7 @@ export default function TicketSuccessContent() {
                   <Calendar className='h-5 w-5 text-orange-600' />
                   <div>
                     <p className='font-bold'>Date</p>
-                    <p>Friday, 4 October 2024</p>
+                    <p>Friday, 4 October 2025</p>
                   </div>
                 </div>
                 <div className='flex items-center gap-3'>

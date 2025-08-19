@@ -85,7 +85,7 @@ export async function POST(request: NextRequest) {
       name: `${purchaserName} ${purchaserSurname}`,
       quantity: quantity,
       event: 'Book Launch - Conquering Your Years in Tertiary Education',
-      date: '2024-10-04',
+      date: '2025-10-04',
       venue: 'Eyethu Centre, Soweto',
       verification_token: verificationToken,
     };
@@ -102,7 +102,7 @@ export async function POST(request: NextRequest) {
       payment_status: 'pending',
       verification_token: verificationToken,
       qr_code_data: JSON.stringify(qrCodeData),
-      event_date: '2024-10-04',
+      event_date: '2025-10-04',
       event_venue: 'Eyethu Centre, Soweto',
     };
 
@@ -150,7 +150,7 @@ export async function POST(request: NextRequest) {
         {
           displayName: `Book Launch Ticket${
             quantity > 1 ? `s (${quantity})` : ''
-          } - Oct 4, 2024`,
+          } - Oct 4, 2025`,
           quantity: quantity,
           pricingDetails: {
             price: ticketPrice,

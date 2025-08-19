@@ -89,7 +89,7 @@ export default function TrackOrderPage() {
                 <div className="flex-1">
                   <Input
                     type="text"
-                    placeholder="Enter your tracking number (e.g., FS20241207-ABCD)"
+                    placeholder="Enter your tracking number (e.g., FS20251207-ABCD)"
                     value={trackingNumber}
                     onChange={(e) => setTrackingNumber(e.target.value)}
                     className="text-lg py-3"
@@ -319,7 +319,7 @@ export default function TrackOrderPage() {
               <div className="space-y-4">
                 <p className="text-gray-600">
                   Your tracking number was sent to your email after completing your purchase. It looks like this:{" "}
-                  <strong>FS20241207-ABCD</strong>
+                  <strong>FS20251207-ABCD</strong>
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <Button variant="outline" asChild>

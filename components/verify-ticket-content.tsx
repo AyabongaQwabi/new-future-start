@@ -200,7 +200,7 @@ export default function VerifyTicketContent() {
                       <Calendar className='h-5 w-5 text-orange-600' />
                       <div>
                         <p className='font-bold'>Event Date</p>
-                        <p>Friday, 4 October 2024</p>
+                        <p>Friday, 4 October 2025</p>
                       </div>
                     </div>
                     <div className='flex items-center gap-3'>

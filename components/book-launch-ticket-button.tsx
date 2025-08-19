@@ -163,7 +163,7 @@ export default function BookLaunchTicketButton() {
               <Calendar className='h-5 w-5 text-orange-600' />
               <div>
                 <p className='font-bold text-orange-800'>📅 Date & Time</p>
-                <p className='text-orange-700'>Friday, 4 October 2024</p>
+                <p className='text-orange-700'>Friday, 4 October 2025</p>
               </div>
             </div>
             <div className='flex items-center gap-3'>

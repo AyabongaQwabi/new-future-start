@@ -146,7 +146,7 @@ export default function Page() {
                 </p>
                 <div className='flex flex-col sm:flex-row gap-2 justify-center items-center text-sm md:text-base'>
                   <span className='flex items-center gap-2'>
-                    📅 Friday, 4 October 2024
+                    📅 Friday, 4 October 2025
                   </span>
                   <span className='hidden sm:block'>•</span>
                   <span className='flex items-center gap-2'>
