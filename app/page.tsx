@@ -84,57 +84,41 @@ export default function Page() {
       </header>
 
       <main className="flex-1">
-        {/* Hero Section - Green and White Theme */}
-        <section
-          id="home"
-          className="w-full py-20 md:py-32 lg:py-40 bg-gradient-to-r from-green-50 to-green-100 relative overflow-hidden"
-        >
+        {/* Hero Section - SASEA */}
+        <section id="home" className="w-full py-20 md:py-32 lg:py-40 bg-gradient-to-br from-green-50 to-teal-100 relative overflow-hidden">
           <div className="absolute top-10 left-10 text-6xl animate-bounce">🎓</div>
           <div className="absolute top-20 right-20 text-4xl animate-pulse">✨</div>
           <div className="absolute bottom-20 left-20 text-5xl animate-bounce delay-300">🚀</div>
           <div className="container px-4 md:px-6 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
-              <h1
-                className="text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-tighter"
-                style={{
-                  fontFamily: '"Cambria Math", "Angsana New", "Times New Roman", serif',
-                }}
-              >
-                <span className="text-red-600">Future</span> <span className="text-green-600">Start</span>
+              <div className="inline-block bg-gradient-to-r from-green-600 to-teal-600 text-white px-6 py-2 rounded-full font-bold text-sm mb-4">
+                🌟 SOUTH AFRICAN STUDENT EXCELLENCE AWARDS
+              </div>
+              <h1 className="text-5xl md:text-7xl font-extrabold tracking-tighter mb-4">
+                Calling All Student Achievers!
               </h1>
-              <p
-                className="text-xl md:text-2xl text-gray-600 font-bold mb-6"
-                style={{
-                  fontFamily: '"Cambria Math", "Angsana New", "Times New Roman", serif',
-                }}
-              >
-                Let your Future start with us 🌟
+              <p className="text-xl md:text-2xl text-gray-700 font-bold mb-8">
+                The South African Student Excellence Awards (SASEA) is your chance to be recognised nationally — whether in
+                Academics, Leadership, Entrepreneurship, Sport, Arts, Music, Content Creation, Modelling, Broadcasting, or
+                Innovation. Open to High Schools, Colleges/FETs/TVETs and Universities.
               </p>
-
-              <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center pt-2">
                 <Button
                   size="lg"
-                  className="bg-gradient-to-r from-green-500 to-teal-500 hover:from-green-600 hover:to-teal-600 text-white font-bold text-lg rounded-full px-8 py-4 shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all"
+                  className="bg-green-600 hover:bg-green-700 text-white font-bold text-lg rounded-full px-8 py-4 shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all"
                   asChild
                 >
-                  <Link href="/book-accommodation">🏠 Book Accommodation</Link>
+                  <a href="https://forms.gle/iB26NMnwpW6ntRED6" target="_blank" rel="noopener noreferrer">
+                    👉 Nominate Now
+                  </a>
                 </Button>
-                <BookPurchaseButton
-                  amount={29900} // R299.00 in cents
-                  size="lg"
-                  className="bg-green-600 hover:bg-green-700 text-white font-bold text-lg rounded-full px-8 py-4 shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all"
-                >
-                  🎯 Get Your Copy
-                </BookPurchaseButton>
                 <Button
                   size="lg"
                   variant="outline"
-                  className="text-lg border-green-600 text-green-600 hover:bg-green-50 font-bold rounded-full px-8 py-4 bg-transparent"
+                  className="text-lg border-green-600 text-green-700 hover:bg-green-50 font-bold rounded-full px-8 py-4 bg-transparent"
                   asChild
                 >
-                  <Link href="#services">
-                    🔥 Explore Services <ArrowRight className="ml-2 h-5 w-5" />
-                  </Link>
+                  <Link href="/sasea">Learn More</Link>
                 </Button>
               </div>
             </div>
@@ -346,44 +330,7 @@ export default function Page() {
           </div>
         </section>
 
-        {/* SASEA Section - Student Excellence Awards */}
-        <section id="sasea" className="w-full py-12 md:py-24 bg-gradient-to-br from-green-50 to-teal-50">
-          <div className="container px-4 md:px-6">
-            <div className="text-center mb-8">
-              <div className="inline-block bg-gradient-to-r from-green-600 to-teal-600 text-white px-6 py-2 rounded-full font-bold text-sm mb-4">
-                🌟 SOUTH AFRICAN STUDENT EXCELLENCE AWARDS
-              </div>
-              <h2 className="text-4xl md:text-5xl font-black tracking-tight bg-gradient-to-r from-green-700 to-teal-700 bg-clip-text text-transparent mb-4">
-                Calling All Student Achievers!
-              </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                The South African Student Excellence Awards (SASEA) is your chance to be recognised nationally —
-                whether in Academics, Leadership, Entrepreneurship, Sport, Arts, Music, Content Creation, Modelling,
-                Broadcasting, or Innovation. Open to High Schools, Colleges/FETs/TVETs and Universities.
-              </p>
-            </div>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                size="lg"
-                className="bg-green-600 hover:bg-green-700 text-white font-bold rounded-full px-8"
-                asChild
-              >
-                <a href="https://forms.gle/iB26NMnwpW6ntRED6" target="_blank" rel="noopener noreferrer">
-                  👉 Nominate Now
-                </a>
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="text-lg border-green-600 text-green-700 hover:bg-green-50 font-bold rounded-full px-8"
-                asChild
-              >
-                <Link href="/sasea">Learn More</Link>
-              </Button>
-            </div>
-          </div>
-        </section>
+        {/* SASEA Section - Student Excellence Awards (moved to hero) */}
 
         {/* Mid-page CTA - Bold and Fun */}
         <section className="w-full py-16 bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 relative overflow-hidden">
