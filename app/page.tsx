@@ -346,6 +346,45 @@ export default function Page() {
           </div>
         </section>
 
+        {/* SASEA Section - Student Excellence Awards */}
+        <section id="sasea" className="w-full py-12 md:py-24 bg-gradient-to-br from-green-50 to-teal-50">
+          <div className="container px-4 md:px-6">
+            <div className="text-center mb-8">
+              <div className="inline-block bg-gradient-to-r from-green-600 to-teal-600 text-white px-6 py-2 rounded-full font-bold text-sm mb-4">
+                🌟 SOUTH AFRICAN STUDENT EXCELLENCE AWARDS
+              </div>
+              <h2 className="text-4xl md:text-5xl font-black tracking-tight bg-gradient-to-r from-green-700 to-teal-700 bg-clip-text text-transparent mb-4">
+                Calling All Student Achievers!
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                The South African Student Excellence Awards (SASEA) is your chance to be recognised nationally —
+                whether in Academics, Leadership, Entrepreneurship, Sport, Arts, Music, Content Creation, Modelling,
+                Broadcasting, or Innovation. Open to High Schools, Colleges/FETs/TVETs and Universities.
+              </p>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button
+                size="lg"
+                className="bg-green-600 hover:bg-green-700 text-white font-bold rounded-full px-8"
+                asChild
+              >
+                <a href="https://forms.gle/iB26NMnwpW6ntRED6" target="_blank" rel="noopener noreferrer">
+                  👉 Nominate Now
+                </a>
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="text-lg border-green-600 text-green-700 hover:bg-green-50 font-bold rounded-full px-8"
+                asChild
+              >
+                <Link href="/sasea">Learn More</Link>
+              </Button>
+            </div>
+          </div>
+        </section>
+
         {/* Mid-page CTA - Bold and Fun */}
         <section className="w-full py-16 bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 relative overflow-hidden">
           <div className="absolute inset-0 bg-black/20"></div>
