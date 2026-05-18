@@ -671,6 +671,9 @@ export default function Page() {
             <Link href="/privacy" className="text-sm font-medium transition-colors hover:text-purple-400">
               🔒 Privacy
             </Link>
+            <Link href="/about-developer" className="text-sm font-medium transition-colors hover:text-purple-400">
+              <small style={{ color: "#3c4557" }}>👨‍💻 About the developer</small>
+            </Link>
           </div>
         </div>
       </footer>
