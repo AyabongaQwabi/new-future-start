@@ -17,11 +17,12 @@ export function Navbar() {
         <div className="flex items-center gap-2">
           <Link href="/">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-07%20at%2020.11.24-aiRSvS4nTzPtzOlvrrO8NPFtkZKU0Y.jpeg"
+              src="/newlogo.png"
               alt="Future Start Logo"
               width={150}
               height={50}
               className="h-10 w-auto"
+              priority
             />
           </Link>
         </div>
