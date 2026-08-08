@@ -7,46 +7,44 @@ import { GoogleAnalytics } from '@next/third-parties/google';
 
 const inter = Inter({ subsets: ['latin'] });
 
+const SITE_URL = "https://www.futurestart.co.za"
+const SITE_TITLE = "Future Start Excellence Academy | FutureReady Short Courses"
+const SITE_DESCRIPTION =
+  "Future Start Excellence Academy offers FutureReady short courses in operations, project management, cost management, entrepreneurship, and AI productivity — plus mentoring and coaching for unemployed youth, graduates, professionals, and entrepreneurs."
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://futurestart.co.za"),
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: "Future Start | Student Services And Accommodation Platform",
-    template: "%s | Future Start",
+    default: SITE_TITLE,
+    template: "%s | Future Start Excellence Academy",
   },
-  description: "Future Start helps South African tertiary students with accommodation requests, digital books, and campus support.",
-  keywords: [
-    "Future Start",
-    "student accommodation South Africa",
-    "tertiary student support",
-    "digital books",
-    "student services"
-],
+  description: SITE_DESCRIPTION,
   authors: [{ name: "Future Start" }],
   creator: "Future Start",
   publisher: "Future Start",
   alternates: {
-    canonical: "https://futurestart.co.za",
+    canonical: "/",
   },
   openGraph: {
     type: 'website',
     locale: 'en_ZA',
-    url: "https://futurestart.co.za",
-    siteName: "Future Start",
-    title: "Future Start | Student Services And Accommodation Platform",
-    description: "Future Start helps South African tertiary students with accommodation requests, digital books, and campus support.",
+    url: SITE_URL,
+    siteName: "Future Start Excellence Academy",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: "Future Start social preview",
+        alt: "Future Start Excellence Academy",
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Future Start",
-    description: "Future Start helps South African tertiary students with accommodation requests, digital books, and campus support.",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
     images: ['/og-image.jpg'],
   },
   robots: {
@@ -74,7 +72,7 @@ export default function RootLayout({
     <html lang='en-ZA'><body className={inter.className}>
         {children}
         <Toaster position='bottom-right' />
-        <GoogleAnalytics gaId='G-JL1XZPJG3V' />
+        <GoogleAnalytics gaId='G-B6C06JGW6S' />
       </body>
     </html>
   );

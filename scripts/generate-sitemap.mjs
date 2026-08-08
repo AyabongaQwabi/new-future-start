@@ -1,11 +1,11 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
-const siteUrl = "https://futurestart.co.za".replace(/\/$/, '');
+const siteUrl = "https://www.futurestart.co.za".replace(/\/$/, '');
 const root = process.cwd();
 const packageJson = JSON.parse(fs.readFileSync(path.join(root, 'package.json'), 'utf8'));
 const isViteApp = Boolean(packageJson.scripts?.dev?.includes('vite'));
-const isCreateReactApp = Boolean(packageJson.scripts?.build?.includes('react-scripts')); 
+const isCreateReactApp = Boolean(packageJson.scripts?.build?.includes('react-scripts'));
 const outputDir = fs.existsSync(path.join(root, 'dist')) ? path.join(root, 'dist') : path.join(root, 'public');
 
 function walk(dir) {
@@ -13,7 +13,7 @@ function walk(dir) {
   return fs.readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
     const full = path.join(dir, entry.name);
     if (entry.isDirectory()) {
-      if (['node_modules', '.next', 'dist', 'build', 'api', 'admin'].includes(entry.name)) return [];
+      if (['node_modules', '.next', 'dist', 'build', 'api', 'admin', 'checkout', 'ticket', 'track', 'track-order', 'verify-ticket', 'test-email', 'promo-codes'].includes(entry.name)) return [];
       return walk(full);
     }
     return [full];

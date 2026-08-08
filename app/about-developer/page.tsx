@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   title: "Built by Ayabonga Qwabi | Future Start",
   description: "Future Start was built by Ayabonga Qwabi, a Senior Product Engineer specialising in Student accommodation requests, Digital books, Ticket verification and...",
   alternates: {
-    canonical: "https://futurestart.co.za/about-developer",
+    canonical: "/about-developer",
   },
   openGraph: {
     title: "Built by Ayabonga Qwabi | Future Start",
     description: "Future Start was built by Ayabonga Qwabi, a Senior Product Engineer specialising in Student accommodation requests, Digital books, Ticket verification and...",
-    url: "https://futurestart.co.za/about-developer",
+    url: "https://www.futurestart.co.za/about-developer",
     type: 'profile',
   },
 };

@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: "The Book",
   description:
     "Conquering Your Years in Tertiary Education — a practical guide to academic excellence from Future Start.",
+  alternates: {
+    canonical: "/book",
+  },
 }
 
 export default function BookPage() {

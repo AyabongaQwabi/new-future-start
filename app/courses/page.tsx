@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   title: "Courses",
   description:
     "FutureReady short courses in operations, project management, cost management, entrepreneurship, statistics, supply chain, and business management.",
+  alternates: {
+    canonical: "/courses",
+  },
 }
 
 export default function CoursesPage() {

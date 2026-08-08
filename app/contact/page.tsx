@@ -9,6 +9,9 @@ const REGISTER_URL = "https://forms.cloud.microsoft/r/ZSsDf4MLM5"
 export const metadata: Metadata = {
   title: "Contact",
   description: "Get in touch with Future Start Excellence Academy about courses, mentoring, and coaching programs.",
+  alternates: {
+    canonical: "/contact",
+  },
 }
 
 export default function ContactPage() {

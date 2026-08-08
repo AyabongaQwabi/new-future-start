@@ -1,5 +1,14 @@
 import Link from "next/link"
+import type { Metadata } from "next"
 import { Button } from "@/components/ui/button"
+
+export const metadata: Metadata = {
+  title: "Terms of Service",
+  description: "Terms of Service for Future Start Excellence Academy.",
+  alternates: {
+    canonical: "/terms",
+  },
+}
 
 export default function TermsPage() {
   return (

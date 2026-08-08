@@ -1,5 +1,14 @@
 import Link from "next/link"
+import type { Metadata } from "next"
 import { Button } from "@/components/ui/button"
+
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description: "Privacy Policy for Future Start Excellence Academy.",
+  alternates: {
+    canonical: "/privacy",
+  },
+}
 
 export default function PrivacyPage() {
   return (

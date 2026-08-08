@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://futurestart.co.za/sitemap.xml
+Sitemap: https://www.futurestart.co.za/sitemap.xml

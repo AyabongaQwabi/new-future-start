@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   title: "Mentoring & Coaching",
   description:
     "Personalized mentoring and coaching from Future Start — guiding learners to smarter study, career, and leadership decisions.",
+  alternates: {
+    canonical: "/mentoring-coaching",
+  },
 }
 
 export default function MentoringCoachingPage() {
