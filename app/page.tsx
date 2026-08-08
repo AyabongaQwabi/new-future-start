@@ -266,8 +266,16 @@ export default function Page() {
               <div className="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20">
                 <h3 className="font-bold text-xl mb-2">Professional Credibility</h3>
                 <p className="text-white/90">
-                  While currently non-accredited, our courses are aligned with Quality Council for Trades and
-                  Occupations (QCTO) standards, ensuring relevance and credibility.
+                  While currently non-accredited, our courses are aligned with{" "}
+                  <a
+                    href="https://www.qcto.org.za/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:text-white"
+                  >
+                    Quality Council for Trades and Occupations (QCTO)
+                  </a>{" "}
+                  standards, ensuring relevance and credibility.
                 </p>
               </div>
             </div>

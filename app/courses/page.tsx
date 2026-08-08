@@ -5,6 +5,62 @@ import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 
 const REGISTER_URL = "https://forms.cloud.microsoft/r/ZSsDf4MLM5"
+const SITE_URL = "https://www.futurestart.co.za"
+
+const STANDALONE_COURSES = [
+  "Introduction to Operations Management",
+  "Introduction to Project Management",
+  "Cost Management for Operations & Projects",
+  "Fundamentals of Entrepreneurship & Productivity in the Age of Artificial Intelligence (AI)",
+  "Statistics for Operations & Project Management",
+  "Introduction to Supply Chain Management",
+  "Introduction to Business Management",
+] as const
+
+const FLAGSHIP_COURSES = [
+  "Operations & Project Management Essentials",
+  "Cost Accounting & Statistics for Management",
+  "Supply Chain & Business Management Essentials",
+] as const
+
+const coursesJsonLd = [
+  ...STANDALONE_COURSES.map((name) => ({
+    "@context": "https://schema.org",
+    "@type": "Course",
+    name,
+    description: `${name} — a standalone short course from Future Start Excellence Academy, taught live online with AI productivity fundamentals included.`,
+    provider: {
+      "@type": "EducationalOrganization",
+      name: "Future Start Excellence Academy",
+      url: SITE_URL,
+    },
+    offers: {
+      "@type": "Offer",
+      price: "3250",
+      priceCurrency: "ZAR",
+      availability: "https://schema.org/InStock",
+      url: `${SITE_URL}/courses`,
+    },
+  })),
+  ...FLAGSHIP_COURSES.map((name) => ({
+    "@context": "https://schema.org",
+    "@type": "Course",
+    name,
+    description: `${name} — a combined flagship short course from Future Start Excellence Academy, taught live online with AI productivity fundamentals included.`,
+    provider: {
+      "@type": "EducationalOrganization",
+      name: "Future Start Excellence Academy",
+      url: SITE_URL,
+    },
+    offers: {
+      "@type": "Offer",
+      price: "5500",
+      priceCurrency: "ZAR",
+      availability: "https://schema.org/InStock",
+      url: `${SITE_URL}/courses`,
+    },
+  })),
+]
 
 const FAQS = [
   {
@@ -75,8 +131,16 @@ export default function CoursesPage() {
                 <li>Businesses investing in staff development</li>
               </ul>
               <p className="text-sm text-gray-500 italic mt-4">
-                Note: Courses are currently non-accredited while alignment with the Quality Council for Trades and
-                Occupations (QCTO) is in progress.
+                Note: Courses are currently non-accredited while alignment with the{" "}
+                <a
+                  href="https://www.qcto.org.za/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-green-700"
+                >
+                  Quality Council for Trades and Occupations (QCTO)
+                </a>{" "}
+                is in progress.
               </p>
               <p className="text-base font-semibold text-green-700 mt-4">
                 AI productivity fundamentals are covered in every course.
@@ -88,15 +152,7 @@ export default function CoursesPage() {
                 <h2 className="text-2xl font-bold text-slate-900 mb-2">Standalone Courses</h2>
                 <p className="text-green-700 font-bold mb-6">R3,250 each</p>
                 <ul className="space-y-4">
-                  {[
-                    "Introduction to Operations Management",
-                    "Introduction to Project Management",
-                    "Cost Management for Operations & Projects",
-                    "Fundamentals of Entrepreneurship & Productivity in the Age of Artificial Intelligence (AI)",
-                    "Statistics for Operations & Project Management",
-                    "Introduction to Supply Chain Management",
-                    "Introduction to Business Management",
-                  ].map((course) => (
+                  {STANDALONE_COURSES.map((course) => (
                     <li key={course} className="flex items-start gap-3 bg-white rounded-2xl p-4 shadow-md">
                       <CheckCircle className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
                       <span className="text-gray-700 font-medium">{course}</span>
@@ -109,11 +165,7 @@ export default function CoursesPage() {
                 <h2 className="text-2xl font-bold text-slate-900 mb-2">Combined Flagship Courses</h2>
                 <p className="text-green-700 font-bold mb-6">R5,500 each</p>
                 <ul className="space-y-4">
-                  {[
-                    "Operations & Project Management Essentials",
-                    "Cost Accounting & Statistics for Management",
-                    "Supply Chain & Business Management Essentials",
-                  ].map((course) => (
+                  {FLAGSHIP_COURSES.map((course) => (
                     <li
                       key={course}
                       className="flex items-start gap-3 bg-white rounded-2xl p-4 shadow-md border-2 border-green-200"
@@ -211,6 +263,13 @@ export default function CoursesPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
+      {coursesJsonLd.map((course) => (
+        <script
+          key={course.name}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(course) }}
+        />
+      ))}
     </div>
   )
 }
