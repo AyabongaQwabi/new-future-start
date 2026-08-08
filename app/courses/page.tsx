@@ -6,10 +6,46 @@ import { SiteFooter } from "@/components/site-footer"
 
 const REGISTER_URL = "https://forms.cloud.microsoft/r/ZSsDf4MLM5"
 
+const FAQS = [
+  {
+    question: "Are Future Start's short courses accredited?",
+    answer:
+      "Our short courses are currently non-accredited while alignment with the Quality Council for Trades and Occupations (QCTO) is in progress. They are designed to build practical, career-ready skills and to prepare learners for advanced study at universities and business schools.",
+  },
+  {
+    question: "How much do the courses cost?",
+    answer:
+      "Standalone courses cost R3,250 each. Combined flagship courses — which bundle related standalone courses for deeper learning — cost R5,500 each.",
+  },
+  {
+    question: "How are the courses delivered?",
+    answer:
+      "All courses are taught live online by a trusted facilitator, with structured theory, practical insights, and interactive discussion. AI productivity fundamentals are covered in every course.",
+  },
+  {
+    question: "Who are these online courses for?",
+    answer:
+      "Our courses are ideal for unemployed youth and graduates, professionals wanting to upskill quickly, aspiring project managers, and businesses investing in staff development across South Africa.",
+  },
+] as const
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: FAQS.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.answer,
+    },
+  })),
+}
+
 export const metadata: Metadata = {
   title: "Courses",
   description:
-    "FutureReady short courses in operations, project management, cost management, entrepreneurship, statistics, supply chain, and business management.",
+    "FutureReady online short courses in South Africa — operations, project management, cost management, entrepreneurship, statistics, supply chain, and business management.",
   alternates: {
     canonical: "/courses",
   },
@@ -144,9 +180,37 @@ export default function CoursesPage() {
             </div>
           </div>
         </section>
+
+        {/* FAQ */}
+        <section className="w-full py-16 md:py-24 lg:py-32 bg-gradient-to-br from-gray-50 to-green-50">
+          <div className="container px-4 md:px-6">
+            <div className="text-center mb-12 max-w-3xl mx-auto">
+              <div className="inline-block bg-gradient-to-r from-green-600 to-teal-600 text-white px-6 py-2 rounded-full font-bold text-sm mb-4">
+                FAQ
+              </div>
+              <h2 className="text-4xl md:text-5xl font-black tracking-tight text-slate-900 mb-4">
+                Frequently Asked Questions
+              </h2>
+            </div>
+
+            <div className="max-w-3xl mx-auto space-y-4">
+              {FAQS.map((faq) => (
+                <div key={faq.question} className="bg-white rounded-2xl p-6 shadow-md">
+                  <h3 className="font-bold text-lg text-slate-900 mb-2">{faq.question}</h3>
+                  <p className="text-gray-600">{faq.answer}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
       </main>
 
       <SiteFooter />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
     </div>
   )
 }

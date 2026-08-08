@@ -118,9 +118,9 @@ export default function Page() {
                   Short Courses Built for Career-Ready Skills
                 </h2>
                 <p className="text-lg text-gray-600 mb-6">
-                  Standalone and combined flagship courses in operations, project management, cost management,
-                  entrepreneurship, statistics, supply chain, and business management — with AI productivity
-                  fundamentals covered in every course.
+                  Standalone and combined flagship online courses for learners across South Africa, covering
+                  operations, project management, cost management, entrepreneurship, statistics, supply chain, and
+                  business management — with AI productivity fundamentals covered in every course.
                 </p>
                 <Button
                   size="lg"
@@ -171,7 +171,7 @@ export default function Page() {
                   MENTORING &amp; COACHING
                 </div>
                 <h2 className="text-3xl md:text-4xl font-black tracking-tight text-slate-900 mb-4">
-                  Guidance to Lead With Excellence
+                  Guidance That Grows Your Career
                 </h2>
                 <p className="text-lg text-gray-600 mb-6">
                   Beyond the classroom, Future Start offers dedicated mentoring and coaching — helping you make

@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ['latin'] });
 const SITE_URL = "https://www.futurestart.co.za"
 const SITE_TITLE = "Future Start Excellence Academy | FutureReady Short Courses"
 const SITE_DESCRIPTION =
-  "Future Start Excellence Academy offers FutureReady short courses in operations, project management, cost management, entrepreneurship, and AI productivity — plus mentoring and coaching for unemployed youth, graduates, professionals, and entrepreneurs."
+  "Future Start Excellence Academy offers FutureReady online short courses in South Africa — operations, project management, cost management, entrepreneurship, and AI productivity — plus mentoring and coaching for unemployed youth, graduates, professionals, and entrepreneurs."
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

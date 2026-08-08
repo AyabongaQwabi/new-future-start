@@ -27,7 +27,7 @@ export default function ContactPage() {
                 LET'S TALK
               </div>
               <h1 className="text-4xl md:text-5xl font-black tracking-tight text-slate-900 mb-4">
-                Ready to Lead with Excellence?
+                Ready to Get Started?
               </h1>
               <p className="text-xl text-gray-600">
                 Enrol today, or reach out with any questions about our courses, mentoring, and coaching programs.
@@ -147,8 +147,8 @@ export default function ContactPage() {
             <div className="max-w-3xl mx-auto mt-8 bg-gradient-to-r from-green-600 to-teal-600 text-white p-6 rounded-3xl shadow-xl text-center">
               <h2 className="font-bold text-lg mb-2">Ready to Start Your Journey?</h2>
               <p className="text-green-50 text-sm">
-                Join over 300 graduates who have already been mentored into successful careers. Enrol today and lead
-                with excellence!
+                Join over 300 graduates who have already been mentored into successful careers. Enrol today and take
+                the next step in your career.
               </p>
             </div>
           </div>
