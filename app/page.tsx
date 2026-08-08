@@ -24,7 +24,7 @@ export default function Page() {
           <div className="absolute top-10 right-10 text-5xl animate-pulse">✨</div>
           <div className="container px-4 md:px-6 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
-              <div className="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-green-600 to-teal-600 text-white px-6 py-3 rounded-full font-bold text-sm md:text-base mb-6 shadow-lg">
+              <div className="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-green-600 to-teal-600 text-white px-6 py-3 rounded-full font-bold text-lg md:text-2xl mb-6 shadow-lg">
                 🌟 FUTURE START EXCELLENCE ACADEMY
               </div>
               <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight mb-6 text-slate-900 leading-tight">
