@@ -256,7 +256,7 @@ export default function VerifyTicketContent() {
 
                 {/* Instructions */}
                 <div className='text-center text-sm text-gray-600'>
-                  <p>For support, contact: majork.n07@gmail.com</p>
+                  <p>For support, contact: programmes@futurestart.co.za</p>
                 </div>
               </CardContent>
             </>

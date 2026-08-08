@@ -24,10 +24,10 @@ export default function Page() {
           <div className="absolute top-10 right-10 text-5xl animate-pulse">✨</div>
           <div className="container px-4 md:px-6 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
-              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-green-600 to-teal-600 text-white px-6 py-3 rounded-full font-bold text-sm md:text-base mb-6 shadow-lg">
+              <div className="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-green-600 to-teal-600 text-white px-6 py-3 rounded-full font-bold text-sm md:text-base mb-6 shadow-lg">
                 🌟 FUTURE START EXCELLENCE ACADEMY
               </div>
-              <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 text-slate-900 leading-tight">
+              <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight mb-6 text-slate-900 leading-tight">
                 FutureReady Short Courses for Unemployed Youth and Graduates, Entrepreneurs &amp; Professionals
               </h1>
               <p className="text-base md:text-lg text-gray-800 font-medium mb-8 leading-relaxed text-justify">

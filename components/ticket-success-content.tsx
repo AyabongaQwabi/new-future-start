@@ -317,7 +317,7 @@ export default function TicketSuccessContent() {
                 <li>• Bring a valid ID for verification</li>
                 <li>• Screenshots of the QR code are acceptable</li>
                 <li>
-                  • Contact us if you have any questions: majork.n07@gmail.com
+                  • Contact us if you have any questions: programmes@futurestart.co.za
                 </li>
               </ul>
             </div>
