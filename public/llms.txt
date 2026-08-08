@@ -1,0 +1,19 @@
+# Future Start Excellence Academy
+
+> Future Start Excellence Academy offers FutureReady online short courses in South Africa — in operations, project management, cost management, entrepreneurship, statistics, supply chain, and business management — plus mentoring and coaching, for unemployed youth, graduates, professionals, and entrepreneurs. Courses are taught live online and integrate AI productivity fundamentals. Courses are currently non-accredited while alignment with the Quality Council for Trades and Occupations (QCTO) is in progress.
+
+Future Start was founded by Ntokozo Mthethwa, an author, mentor, and entrepreneur. Over 300 graduates have been mentored into successful careers.
+
+## Key pages
+
+- [Home](https://www.futurestart.co.za/): Overview of courses, mentoring & coaching, and the book.
+- [Courses](https://www.futurestart.co.za/courses): Full list of standalone (R3,250 each) and combined flagship (R5,500 each) short courses, who should attend, and FAQs.
+- [Mentoring & Coaching](https://www.futurestart.co.za/mentoring-coaching): Personalized mentoring and coaching programs.
+- [The Book](https://www.futurestart.co.za/book): Conquering Your Years in Tertiary Education (R450).
+- [Contact](https://www.futurestart.co.za/contact): Email, WhatsApp, and social contact details.
+- [Pricing](https://www.futurestart.co.za/pricing.md): Machine-readable pricing for all courses, the book, and mentoring.
+
+## Contact
+
+- Email: programmes@futurestart.co.za
+- WhatsApp: +27 72 041 9723
