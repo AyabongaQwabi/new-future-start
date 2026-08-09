@@ -30,7 +30,7 @@ Bundles of related standalone courses for deeper learning.
 
 ## Registration
 
-Register for any course at: https://forms.cloud.microsoft/r/ZSsDf4MLM5
+Register for any course at: https://forms.gle/Qv6cVnNNx3PFrGZD8
 
 ## Contact
 

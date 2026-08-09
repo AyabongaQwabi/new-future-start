@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
-const REGISTER_URL = "https://forms.cloud.microsoft/r/ZSsDf4MLM5"
+const REGISTER_URL = "https://forms.gle/Qv6cVnNNx3PFrGZD8"
 
 const NAV_LINKS = [
   { href: "/", label: "Home" },

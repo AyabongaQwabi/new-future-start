@@ -4,7 +4,7 @@ import { Award, CheckCircle, Compass, Target, Users } from "lucide-react"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 
-const REGISTER_URL = "https://forms.cloud.microsoft/r/ZSsDf4MLM5"
+const REGISTER_URL = "https://forms.gle/Qv6cVnNNx3PFrGZD8"
 
 export const metadata: Metadata = {
   title: "Mentoring & Coaching",

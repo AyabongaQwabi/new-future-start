@@ -6,7 +6,7 @@ import CheckoutStatus from "@/components/checkout-status"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 
-const REGISTER_URL = "https://forms.cloud.microsoft/r/ZSsDf4MLM5"
+const REGISTER_URL = "https://forms.gle/Qv6cVnNNx3PFrGZD8"
 
 export default function Page() {
   return (
